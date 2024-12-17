@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>language-color matching game</title>
+</head>
+<body>
+        <div id="introInterface">
+            <h2>You're starting soon</h2>
+            <!-- <div id="colordisplay"></div> -->
+        </div>
+        <div id="gameInterface" style="display: none;">
+            <div id="gameForm">
+                <h3 center>Welcome on board!</h3>
+                <select name="Select language" id="selectLanguage">
+                    <option value="">Select language</option>
+                    <option value="">Java</option>
+                    <option value="">Kotlin</option>
+                    <option value="">Perl</option>
+                    <option value="">Objective-C</option>
+                    <option value="">Julia</option>
+                    <option value="">Python</option>
+                    <option value="">PHP</option>
+                    <option value="">TypeScript</option>
+                    <option value="">Ruby</option>
+                    <option value="">Rust</option>
+                    <option value="">Haskell</option>
+                    <option value="">Fortran</option>
+                    <option value="">JavaScript</option>
+                    <option value="">CSS</option>
+                    <option value="">Scala</option>
+                    <option value="">Visual Basic</option>
+                    <option value="">Swift</option>
+                    <option value="">C#</option>
+                    <option value="">Groovy</option>
+                    <option value="">Ada</option>
+                    <option value="">MATLAB</option>
+                    <option value="">Lua</option>
+                    <option value="">Shell</option>
+                    <option value="">COBOL</option>
+                    <option value="">HTML</option>
+                    <option value="">SQL</option>
+                    <option value="">Go</option>
+                    <option value="">C++</option>
+                    <option value="">R</option>
+                    <option value="">Dart</option>
+                    <option value="">Shell</option>
+                </select>
+                <select name="Select Color" id="selectColor" style="text-align: center ">
+                    <option value="">Select color</option>
+                    <option value="" style="background: blue;">blue</option>
+                    <option value="" style="background: purple">purple</option>
+                    <option value="" style="background: rosybrown">rosybrown</option>
+                    <option value="" style="background: darkgreen">darkgreen</option>
+                    <option value="" style="background: teal">teal</option>
+                    <option value="" style="background: navy">navy</option>
+                    <option value="" style="background: darkcyan">darkcyan</option>
+                    <option value="" style="background: pink">pink</option>
+                    <option value="" style="background: yellow">yellow</option>
+                    <option value="" style="background: orangered">orangered</option>
+                    <option value="" style="background: cyan">cyan</option>
+                    <option value="" style="background: magenta">magenta</option>
+                    <option value="" style="background: gold">gold</option>
+                    <option value="" style="background: plum">plum</option>
+                    <option value="" style="background: skyblue">skyblue</option>
+                    <option value="" style="background: forestgreen">forestgreen</option>
+                    <option value="" style="background: darkgrey">darkgrey</option>
+                    <option value="" style="background: darkred">darkred</option>
+                    <option value="" style="background: royalblue">royalblue</option>
+                    <option value="" style="background: lightblue">lightblue</option>
+                    <option value="" style="background: greenyellow">greenyellow</option>
+                    <option value="" style="background: gray">gray</option>
+                    <option value="" style="background: brown">brown</option>
+                    <option value="" style="background: tan">tan</option>
+                    <option value="" style="background: dodgerblue">dodgerblue</option>
+                    <option value="" style="background: maroon">maroon</option>
+                    <option value="" style="background: orange">orange</option>
+                    <option value="" style="background: darkblue">darkblue</option>
+                    <option value="" style="background: magenta">magenta</option>
+                    <option value="" style="background: green">green</option>
+                    <option value="" style="background: tomato">tomato</option>
+                </select>
+                <button id="check" type="button">Check</button>
+                <div id="result"></div>
+                <div id="gameCalc">
+                    <p>trials left: <span id="trialsCtr">20</span></p>
+                </div>
+
+            </div>
+            
+    <table id="resultsTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Attempt</th>
+                <th>Language</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+    
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="incorrectSound" src="incorrect.mp3"></audio>
+    <audio id="gameover" src="gameover.mp3"></audio>
+    
+    <script src="plcolormatch.js"></script>
+</body>
+</html>
